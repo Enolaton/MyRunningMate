@@ -21,4 +21,7 @@ gui.py
 tests/
 
 # 서비스 예시 이미지
-images/
+images/*
+!images/image1.png
+!images/image5.png
+!images/image8.png
