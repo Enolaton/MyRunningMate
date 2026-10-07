@@ -72,7 +72,7 @@ flowchart LR
 
 | 이름 | 역할 | 소개 |
 |---|---|---|
-| 최재웅 | 기획/개발 | 시스템 기획 및 ui와 서비스를 개발 |
+| 최재웅 | 기획/개발 | 시스템 기획 및 UI개발 |
 
 ## 폴더 구조
 
@@ -82,6 +82,10 @@ flowchart LR
 ├── gui.ui                  Qt Designer 메인 화면
 ├── gui.py                  gui.ui에서 자동 생성되는 화면 클래스
 ├── requirements.txt        Python 의존성
+├── images                  README 첨부 이미지 파일
+    ├── image1.png
+    ├── image5.png
+    ├── image8.png
 ├── workout_app/
 │   ├── gpx_parser.py       GPX 파싱 및 거리 계산
 │   ├── models.py          프로필·운동·GPS 포인트 모델
