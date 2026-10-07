@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local application data and personal workout routes
+data/
+sample_data/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# gui.py 파일은 main이 실행되면 ui를 호출하여 변환하므로 포함하지 않음
+gui.py
+
+# 테스트 페르소나 
+test/
+
+# 서비스 예시 이미지
+images/

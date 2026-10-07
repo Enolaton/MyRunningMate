@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle">
+   <string>러닝 메이트</string>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <property name="leftMargin">
+     <number>6</number>
+    </property>
+    <property name="topMargin">
+     <number>6</number>
+    </property>
+    <property name="rightMargin">
+     <number>6</number>
+    </property>
+    <property name="bottomMargin">
+     <number>6</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="main_tabs">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="dailyTab">
+       <attribute name="title">
+        <string>일일 요약</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="dailyTabLayout">
+        <item>
+         <layout class="QHBoxLayout" name="record_content_layout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="recordListPanel">
+           <layout class="QVBoxLayout" name="recordListPanelLayout">
+            <item>
+             <widget class="QTabWidget" name="record_views">
+              <widget class="QWidget" name="listPage">
+               <attribute name="title">
+                <string>리스트로 보기</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="listPageLayout">
+                <item>
+                 <widget class="QListWidget" name="workout_list"/>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="calendarPage">
+               <attribute name="title">
+                <string>캘린더로 보기</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="calendarPageLayout">
+                <item alignment="Qt::AlignHCenter">
+                 <widget class="QCalendarWidget" name="calendar">
+                  <property name="gridVisible">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QListWidget" name="calendar_workout_list"/>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="detailPanel">
+           <layout class="QVBoxLayout" name="detailPanelLayout">
+            <item>
+             <widget class="QLabel" name="detail_title">
+              <property name="text">
+               <string>운동 기록을 선택해 주세요.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="detail_text">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="metrics">
+              <layout class="QHBoxLayout" name="metrics_layout">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>4</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>4</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="osm_map_toggle">
+              <property name="text">
+               <string>OpenStreetMap 배경 지도 불러오기</string>
+              </property>
+              <property name="toolTip">
+               <string>켜면 현재 운동 경로 주변의 지도 타일을 온라인으로 요청합니다. 운동 위치가 OpenStreetMap 타일 제공자에게 전달됩니다.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="route_plot_container">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>190</height>
+               </size>
+              </property>
+              <layout class="QVBoxLayout" name="route_plot_layout">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="elevation_plot_container">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>190</height>
+               </size>
+              </property>
+              <layout class="QVBoxLayout" name="elevation_plot_layout">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="elevation_caption">
+              <property name="text">
+               <string>운동 경로를 따라 기록된 고도의 오르내림을 보여줍니다.</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+           </widget>
+           <property name="stretch">
+            <number>1</number>
+           </property>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1120</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

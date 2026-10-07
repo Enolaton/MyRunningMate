@@ -1,0 +1,5 @@
+# project default
+PyQt5>=5.15
+
+# Asia/Seoul
+tzdata>=2025.2
