@@ -85,7 +85,7 @@ flowchart LR
 ├── images                  README 첨부 이미지 파일
     ├── image1.png
     ├── image5.png
-    ├── image8.png
+    └── image8.png
 ├── workout_app/
 │   ├── gpx_parser.py       GPX 파싱 및 거리 계산
 │   ├── models.py          프로필·운동·GPS 포인트 모델
