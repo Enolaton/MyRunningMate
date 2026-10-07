@@ -109,14 +109,14 @@ python main.py
 python -m unittest discover -s tests -v
 ```
 
-### 개인정보 및 지도 안내
+### 지도(OSM) 안내 및 OSM Tile 정책
 
-프로필과 운동 기록은 `data/`에만 저장되며 Git에서 제외됩니다. GPX에는 민감한 위치와 운동 시각이 포함될 수 있으므로 실제 GPX나 개인 기록을 저장소에 추가하지 마세요. OpenStreetMap 지도를 켜면 경로 주변 위치가 타일 제공자에게 전달되며, 동의하지 않으면 경로 그래프만 표시됩니다. 타일은 현재 화면에 필요한 만큼만 요청하고 출처를 표시합니다. 자세한 내용은 [OpenStreetMap 타일 정책](https://operations.osmfoundation.org/policies/tiles/)을 따릅니다.
+OpenStreetMap 지도를 켜면 경로 주변 위치가 타일 제공자에게 전달되며, 동의하지 않으면 경로 그래프만 표시됩니다. 타일은 현재 화면에 필요한 만큼만 요청하고 출처를 표시합니다. 자세한 내용은 [OpenStreetMap 타일 정책](https://operations.osmfoundation.org/policies/tiles/)을 따릅니다.
 
 ## 향후 계획
 
-- GPX 포맷 및 제조사별 심박수 확장 호환성 확대
+- 건강 데이터 내 심박수 확장 호환성 확대
 - 운동 기록 분석과 주간 요약 지표 개선
-- 지도 제공 방식과 위치정보 보호 설정 개선
+- 지도 제공 인터페이스 개선
 - 사용자 피드백을 반영한 화면 접근성 및 사용성 개선
 - supabase에 사용자 데이터를 저장함으로써, 개인정보 보호 강화
