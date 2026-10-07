@@ -18,7 +18,7 @@ Thumbs.db
 gui.py
 
 # 테스트 페르소나 
-test/
+tests/
 
 # 서비스 예시 이미지
 images/
